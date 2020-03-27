@@ -13,7 +13,13 @@ int cbinsearch(int* arr, int size, int value)
 			j = mid;
 		else
 			j = mid + 1;
-
 	}
 	return count;
 }
+int main()
+{
+	int res = 0;
+	const int size = 10;
+	int arr[size] = { 5,2,5,5,5,5,5,8,9,0 };
+	cout<<cbinsearch(arr, size, 5)<<endl;
+	return 0;
